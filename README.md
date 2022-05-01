@@ -15,8 +15,10 @@
      - Use belo commands for the same
      
      - Train
-        python train.py --logtostderr --train_dir=mask_training/ --pipeline_config_path=mask_training/mask_rcnn_inception_v2_coco.config
+         
+         - python train.py --logtostderr --train_dir=mask_training/ --pipeline_config_path=mask_training/mask_rcnn_inception_v2_coco.config
 
 
     - Inference
-       python export_inference_graph.py --input_type image_tensor --pipeline_config_path mask_training/mask_rcnn_inception_v2_coco.config --trained_checkpoint_prefix            mask_training/model.ckpt-10 --output_directory inference_graph
+       
+       - python export_inference_graph.py --input_type image_tensor --pipeline_config_path mask_training/mask_rcnn_inception_v2_coco.config --trained_checkpoint_prefix            mask_training/model.ckpt-10 --output_directory inference_graph
