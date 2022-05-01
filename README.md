@@ -8,3 +8,6 @@
 2. # Download the model from Tensordflow model zoo
      - https://github.com/tensorflow/models/tree/v1.13.0
      - use the models whose outputs are Mask
+3. # Model Config file changes
+     - Make necessary changes basis the requirement of experiment (sepcially in line 10 and line 127)
+     - Line 127 referes for the checkpoint modification 
