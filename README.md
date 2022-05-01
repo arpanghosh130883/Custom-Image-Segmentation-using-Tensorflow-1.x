@@ -10,4 +10,13 @@
      - use the models whose outputs are Mask
 3. # Model Config file changes
      - Make necessary changes basis the requirement of experiment (sepcially in line 10 and line 127)
-     - Line 127 referes for the checkpoint modification 
+     - Line 127 referes for the checkpoint modification
+4. # Traing and Inferencing
+     - Use belo commands for the same
+     
+     #train cmd:
+        python train.py --logtostderr --train_dir=mask_training/ --pipeline_config_path=mask_training/mask_rcnn_inception_v2_coco.config
+
+
+    #inference cmd
+       python export_inference_graph.py --input_type image_tensor --pipeline_config_path mask_training/mask_rcnn_inception_v2_coco.config --trained_checkpoint_prefix            mask_training/model.ckpt-10 --output_directory inference_graph
